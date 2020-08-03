@@ -1,0 +1,26 @@
+{
+    "version": 3,
+    "mappings": ";AGGA,AAAA,IAAI,CAAC;EACH,WAAW,EAJM,WAAW,EAAE,UAAU;CAKzC;;ACMD;qCACqC;ACZrC,AAAA,OAAO,CAAC;EACN,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,MAAM;EACtB,cAAc,EAAE,SAAS;EAEzB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EAEZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,SAAS;EAElB,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,iBAAiB;EACzB,gBAAgB,EAAE,WAAW;EAC7B,UAAU,EAAE,UAAU;EACtB,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,OAAO;CAQhB;;AA1BD,AAoBE,OApBK,AAoBJ,MAAM,CAAC;EACN,KAAK,EAAE,OAAO;CACf;;AAtBH,AAuBE,OAvBK,AAuBJ,KAAK,CAAC;EACL,gBAAgB,EAAE,OAAO;CAC1B;;ACzBH,gBAAgB;AAChB,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAU;CACvB;;AACD,AAAA,CAAC;AACD,QAAQ;AACR,OAAO,CAAC;EACN,UAAU,EAAE,OAAO;CACpB;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACA,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,GAAG;CACnB;;AACD,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;CACb;;AACD,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/Base/_modules.scss",
+        "../sass/Base/_variables.scss",
+        "../sass/Base/_typography.scss",
+        "../sass/Base/_placeholders.scss",
+        "../sass/Base/_buttons.scss",
+        "../sass/Base/_global.scss",
+        "../sass/Base/_container.scss",
+        "../sass/Base/_section.scss",
+        "../sass/Components/_modules.scss",
+        "../sass/Components/Header/_modules.scss",
+        "../sass/Components/_section-about-us.scss",
+        "../sass/Components/_section-our-prices.scss",
+        "../sass/Components/_section-our-advantages.scss",
+        "../sass/Components/_section-our-team.scss",
+        "../sass/Components/_section-our-works.scss",
+        "../sass/Components/Footer/_modules.scss",
+        "../sass/Components/Footer/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
