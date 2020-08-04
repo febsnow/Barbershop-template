@@ -1,13 +1,25 @@
 .contact-us {
   @extend %list;
-  margin-bottom: 64px;
-
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
   &-item {
     a {
       color: inherit;
     }
     &:not(:last-child) {
-      margin-bottom: 24px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+      }
+      @media screen and (min-width: 768px) {
+        margin-top: 20px;
+      }
     }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    text-align: center;
   }
 }

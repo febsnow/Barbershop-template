@@ -19,8 +19,10 @@
   border-radius: 25px;
   cursor: pointer;
   .menu & {
-    width: 194px;
-    padding: 12px 35px;
+    @media screen and (max-width: 767px) {
+      width: 194px;
+      padding: 12px 35px;
+    }
   }
   &.light {
     color: #303030;

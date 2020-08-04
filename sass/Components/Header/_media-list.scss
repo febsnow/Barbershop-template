@@ -1,8 +1,25 @@
 .media-list {
   @extend %list;
+  .media-item {
+    a {
+      color: inherit;
+    }
+  }
   @media screen and (max-width: 767px) {
     .media-item:not(:last-child) {
       margin-bottom: 24px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: none;
+  }
+  &:before {
+    content: '';
+    display: block;
+    background-color: $forth-text-color;
+    width: 60px;
+    height: 1px;
+    margin-bottom: 10px;
   }
 }
