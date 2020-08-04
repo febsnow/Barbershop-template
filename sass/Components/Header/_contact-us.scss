@@ -3,6 +3,9 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 64px;
   }
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
   &-item {
     a {
       color: inherit;

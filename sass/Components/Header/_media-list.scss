@@ -4,6 +4,11 @@
     a {
       color: inherit;
     }
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
   }
   @media screen and (max-width: 767px) {
     .media-item:not(:last-child) {
@@ -12,7 +17,20 @@
   }
   @media screen and (min-width: 768px) {
     position: absolute;
-    display: none;
+    top: 310px;
+    left: -33%;
+    z-index: 10;
+
+    width: 680px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+
+    transform: rotate(-90deg);
+    padding-left: 40px;
+    background-color: #ffffff;
+    outline: 1px solid green;
   }
   &:before {
     content: '';
@@ -20,6 +38,11 @@
     background-color: $forth-text-color;
     width: 60px;
     height: 1px;
-    margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 40px;
+    }
   }
 }
