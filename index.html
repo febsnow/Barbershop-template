@@ -18,19 +18,29 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container">
-        <span class="logo"> Логотип </span>
-        <div class="menu">
+        <span>
+          <svg class="logo">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
+        </span>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg class="menu-icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="menu-open" href="./images/icons.svg#menu_40px"></use>
+            <use class="menu-close" href="./images/icons.svg#close_40px"></use>
+          </svg>
+        </button>
+        <div class="menu" id="menu-container" data-menu>
           <nav class="navigation">
             <ul class="navigation-list">
-              <li class="navigaton-list-item"><a href="#about-us">О нас</a></li>
-              <li class="navigaton-list-item"><a href="#prices">Услуги и цены</a></li>
-              <li class="navigaton-list-item"><a href="#our-team">Мастера</a></li>
-              <li class="navigaton-list-item"><a href="#contacts">Контакты</a></li>
+              <li class="navigation-list-item"><a href="#about-us">О нас</a></li>
+              <li class="navigation-list-item"><a href="#prices">Услуги и цены</a></li>
+              <li class="navigation-list-item"><a href="#our-team">Мастера</a></li>
+              <li class="navigation-list-item"><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
           <ul class="contact-us">
-            <li><a href="tel:+380441111111">+37 044 111 11 11</a></li>
-            <li><a class="button" href="#subscription-form">ОНЛАЙН-ЗАПИСЬ</a></li>
+            <li class="contact-us-item"><a href="tel:+380441111111">+37 044 111 11 11</a></li>
+            <li class="contact-us-item"><a class="button light" href="#subscription-form">ОНЛАЙН-ЗАПИСЬ</a></li>
           </ul>
           <ul class="media-list">
             <li class="media-item"><a href="#">Instagram</a></li>
@@ -201,7 +211,7 @@
               <div class="team-item-info">
                 <h3 class="item-title" lang="en">John Smith</h3>
                 <p class="item-description" lang="en">Extreme Barber</p>
-                <ul class="social-list">
+                <!-- <ul class="social-list">
                   <li class="social-item">
                     <a class="social-item-link" href="#">
                       <svg class="social-logo">
@@ -230,7 +240,7 @@
                       </svg>
                     </a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
             </li>
             <li class="team-item">
@@ -295,7 +305,7 @@
               <div class="team-item-info">
                 <h3 class="item-title" lang="en">Michele Doe</h3>
                 <p class="item-description" lang="en">Extreme Barber</p>
-                <ul class="social list">
+                <!-- <ul class="social list">
                   <li class="social-item">
                     <a class="social-item-link" href="#">
                       <svg class="social-logo">
@@ -324,7 +334,7 @@
                       </svg>
                     </a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
             </li>
             <li class="team-item">
@@ -388,7 +398,7 @@
               <div class="team-item-info">
                 <h3 class="item-title" lang="en">Alan Black</h3>
                 <p class="item-description" lang="en">Extreme Barber</p>
-                <ul class="social-list">
+                <!-- <ul class="social-list">
                   <li class="social-item">
                     <a class="social-item-link" href="#">
                       <svg class="social-logo">
@@ -417,7 +427,7 @@
                       </svg>
                     </a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
             </li>
           </ul>
@@ -703,5 +713,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

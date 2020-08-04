@@ -1,0 +1,17 @@
+.navigation {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
+  &-list {
+    @extend %list;
+
+    &-item {
+      a {
+        color: inherit;
+      }
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
