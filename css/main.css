@@ -272,24 +272,30 @@ section {
   }
 }
 
-.media-list .media-item a {
+.media-list {
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.page-header .media-list .media-item a {
   color: inherit;
 }
 
 @media screen and (min-width: 768px) {
-  .media-list .media-item:not(:last-child) {
+  .page-header .media-list .media-item:not(:last-child) {
     margin-right: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .media-list .media-item:not(:last-child) {
+  .page-header .media-list .media-item:not(:last-child) {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .media-list {
+  .page-header .media-list {
     position: absolute;
     top: 310px;
     left: -33%;
@@ -302,6 +308,7 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 11px;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     padding-left: 40px;
@@ -310,7 +317,14 @@ section {
   }
 }
 
-.media-list:before {
+@media screen and (min-width: 1200px) {
+  .page-header .media-list {
+    height: 115px;
+    left: -20%;
+  }
+}
+
+.page-header .media-list:before {
   content: '';
   display: block;
   background-color: #303030;
@@ -319,13 +333,13 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .media-list:before {
-    margin-bottom: 10px;
+  .page-header .media-list:before {
+    margin-right: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .media-list:before {
+  .page-header .media-list:before {
     margin-right: 40px;
   }
 }
@@ -336,7 +350,7 @@ section {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-us {
     margin-top: 35px;
   }
@@ -352,9 +366,15 @@ section {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-us-item:not(:last-child) {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-us-item:not(:last-child) {
+    margin-right: 40px;
   }
 }
 
@@ -368,6 +388,18 @@ section {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-us {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
