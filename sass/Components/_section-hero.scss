@@ -1,0 +1,22 @@
+.hero {
+  background-image: linear-gradient(to right, $overlay-color, $overlay-color),
+    url('../../images/Hero/Slider\ img\ 3-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  height: 580px;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, $overlay-color, $overlay-color),
+      url('../../images/Hero/Slider\ img\ 3-1.jpg');
+    height: 680px;
+    background-size: contain;
+    background-position: right;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(to right, $overlay-color, $overlay-color),
+      url('../../images/Hero/Slider-img-3.jpg');
+  }
+}

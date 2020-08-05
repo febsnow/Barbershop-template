@@ -1,0 +1,10 @@
+.page-footer {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  background-color: $additional-bg-color;
+  .copyright {
+    color: $secondary-text-color;
+  }
+}

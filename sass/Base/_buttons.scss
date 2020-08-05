@@ -26,8 +26,17 @@
   }
   &.light {
     color: #303030;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $third-text-color;
+    }
   }
   &.main {
     background-color: #ff6c00;
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
   }
 }

@@ -1,4 +1,13 @@
 .page-header {
-  position: relative;
   background-color: transparent;
+
+  position: absolute;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    top: -40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 0px;
+  }
 }
