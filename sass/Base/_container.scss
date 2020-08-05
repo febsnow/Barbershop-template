@@ -2,18 +2,11 @@
   padding: 0px 31px;
   margin: 0 auto;
   .page-header & {
-    // height: 136px;
-    // position: absolute;
-    // top: 0px;
-    // width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
     align-items: center;
     @media screen and (min-width: 768px) {
-      // padding-top: 40px;
-      // height: 156px;
-
       justify-content: space-between;
     }
   }
