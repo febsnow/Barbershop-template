@@ -1,3 +1,7 @@
+.no-scroll {
+  overflow: hidden;
+  width: 100%;
+}
 .container {
   padding: 0px 31px;
   margin: 0 auto;
@@ -5,7 +9,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
-    align-items: center;
+
+    @media screen and(max-width: 767px) {
+      align-items: center;
+    }
+
     @media screen and (min-width: 768px) {
       justify-content: space-between;
     }
@@ -20,7 +28,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 120s0px;
+    max-width: 1200px;
     padding: 0px 15px;
   }
   .page-footer & {

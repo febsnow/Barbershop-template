@@ -5,10 +5,15 @@
   letter-spacing: 0.2em;
 
   .page-header & {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
     .media-item {
       a {
         color: inherit;
       }
+
       @media screen and (min-width: 768px) {
         &:not(:last-child) {
           margin-right: 40px;
@@ -16,8 +21,9 @@
       }
     }
     @media screen and (max-width: 767px) {
-      .media-item:not(:last-child) {
-        margin-bottom: 24px;
+      .media-item:last-child {
+        margin-top: 24px;
+        margin-left: 100px;
       }
     }
     @media screen and (min-width: 768px) {
@@ -29,7 +35,7 @@
       width: 680px;
       height: 160px;
 
-      display: flex;
+      display: none;
       align-items: center;
 
       font-size: 11px;
@@ -54,6 +60,7 @@
     }
   }
 }
+
 .page-header {
   .media-item:hover,
   .media-item:focus {
@@ -62,13 +69,13 @@
 }
 .page-footer {
   .media-list {
+    font-size: 11px;
     a {
       color: $forth-text-color;
     }
 
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 
     .media-item:not(:last-child) {
       margin-right: 40px;

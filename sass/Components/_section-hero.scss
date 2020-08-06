@@ -11,17 +11,17 @@
   height: 580px;
   padding: 0;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     // position: relative;
     max-width: 768px;
-
+    display: flex;
     background-image: linear-gradient(to right, $overlay-color, $overlay-color),
       url('../../images/Hero/Slider\ img\ 3-1.jpg');
-    max-height: 680px;
+    height: 680px;
     background-size: contain;
     background-position: right;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     max-width: 1280px;
     display: flex;
     background-image: linear-gradient(to right, $overlay-color, $overlay-color),

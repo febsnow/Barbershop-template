@@ -1,0 +1,61 @@
+.hero-aside {
+  width: 159px;
+  background-color: $main-bg-color;
+
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 155px;
+  }
+  .aside-list {
+    @extend %list;
+
+    position: relative;
+    top: 85%;
+
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    font-size: 11px;
+    color: $forth-text-color;
+
+    @media screen and(min-width: 768px) {
+      display: flex;
+      align-items: center;
+
+      transform: rotate(-90deg);
+      padding-left: 40px;
+    }
+
+    // &:before {
+    //   content: '';
+    //   display: block;
+    //   background-image: url('../../../images/svg/line.svg');
+    //   //   background-color: $forth-text-color;
+    //   width: 60px;
+    //   height: 1px;
+    //   margin-right: 40px;
+    //   transform: rotate(-90deg);
+    // }
+
+    &-item {
+      a {
+        color: inherit;
+      }
+      &:first-child {
+        display: flex;
+        align-items: center;
+      }
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+.line {
+  width: 60px;
+  height: 1px;
+  background-color: $forth-text-color;
+  margin-right: 40px;
+}
