@@ -9,13 +9,13 @@
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
+    justify-content: space-between;
 
     @media screen and(max-width: 767px) {
       align-items: center;
     }
 
     @media screen and (min-width: 768px) {
-      justify-content: space-between;
     }
   }
 
