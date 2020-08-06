@@ -11,6 +11,9 @@
     width: 100%;
     height: 100%;
     z-index: 50;
+
+    transition: opacity 250ms linear;
+
     background-color: $overlay-color;
     opacity: 0;
     visibility: hidden;
@@ -29,6 +32,9 @@
       top: 0;
       right: 0;
       z-index: 60;
+
+      transform: translateX(100%);
+      transition: transform 250ms linear 125ms;
 
       font-size: 18px;
       line-height: 1.39;
@@ -66,6 +72,11 @@
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+  transition: opacity 250ms linear;
+
+  .menu-content {
+    transform: translateX(0);
+  }
 }
 .menu-button {
   @media screen and (max-width: 767px) {

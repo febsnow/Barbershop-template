@@ -176,6 +176,7 @@ a {
 @media screen and (max-width: 480px) {
   .page-footer .container {
     padding-top: 44px;
+    padding-bottom: 44px;
   }
 }
 
@@ -272,6 +273,8 @@ section {
     width: 100%;
     height: 100%;
     z-index: 50;
+    -webkit-transition: opacity 250ms linear;
+    transition: opacity 250ms linear;
     background-color: rgba(25, 28, 38, 0.2);
     opacity: 0;
     visibility: hidden;
@@ -298,6 +301,12 @@ section {
     top: 0;
     right: 0;
     z-index: 60;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 250ms linear 125ms;
+    transition: -webkit-transform 250ms linear 125ms;
+    transition: transform 250ms linear 125ms;
+    transition: transform 250ms linear 125ms, -webkit-transform 250ms linear 125ms;
     font-size: 18px;
     line-height: 1.39;
     font-weight: 600;
@@ -338,6 +347,13 @@ section {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+
+.menu.is-open .menu-content {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu-button {
@@ -472,20 +488,30 @@ section {
   color: #303030;
 }
 
+@media screen and (max-width: 479px) {
+  .page-footer .media-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 20px;
+  }
+}
+
 .page-footer .media-list .media-item:not(:last-child) {
   margin-right: 40px;
 }
 
-.page-footer .media-list:before {
-  content: '';
-  display: block;
-  background-color: #303030;
-  width: 60px;
-  height: 1px;
-  margin-right: 40px;
+@media screen and (min-width: 480px) {
+  .page-footer .media-list:before {
+    content: '';
+    display: block;
+    background-color: #303030;
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 480px) {
   .page-footer .media-list {
     margin-bottom: 79px;
   }
@@ -615,6 +641,10 @@ section {
   margin-right: 40px;
 }
 
+.hero-aside .aside-list-item:hover, .hero-aside .aside-list-item:focus {
+  color: #ff6c00;
+}
+
 .line {
   width: 60px;
   height: 1px;
@@ -624,8 +654,8 @@ section {
 
 .hero {
   max-width: 1280px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("./../images/Hero/Slider img 3-2.jpg");
-  background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("./../images/Hero/Slider img 3-2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("./../images/Hero/Slider img 3-2.jpg");
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("./../images/Hero/Slider img 3-2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -641,8 +671,8 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("./../images/Hero/Slider img 3-1.jpg");
-    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("./../images/Hero/Slider img 3-1.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("./../images/Hero/Slider img 3-1.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("./../images/Hero/Slider img 3-1.jpg");
     height: 680px;
     background-size: contain;
     background-position: right;
@@ -655,8 +685,8 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("./../images/Hero/Slider-img-3.jpg");
-    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("./../images/Hero/Slider-img-3.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("./../images/Hero/Slider-img-3.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("./../images/Hero/Slider-img-3.jpg");
   }
 }
 
