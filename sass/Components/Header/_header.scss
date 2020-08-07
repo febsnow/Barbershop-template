@@ -1,10 +1,5 @@
 .page-header {
   background-color: transparent;
 
-  position: absolute;
   width: 100%;
-
-  @media screen and (min-width: 1280px) {
-    top: 0;
-  }
 }

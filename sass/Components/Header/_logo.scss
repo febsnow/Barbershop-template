@@ -1,10 +1,17 @@
-.logo {
-  width: 69px;
-  height: 55px;
-  fill: $third-text-color;
+.site-logo {
+  .logo-icon {
+    width: 69px;
+    height: 55px;
+    fill: $third-text-color;
+  }
   @media screen and (min-width: 768px) {
-    position: relative;
-    z-index: 20;
+    display: none;
+  }
+}
+.aside-site-logo {
+  .logo-icon {
+    width: 69px;
+    height: 55px;
     fill: $forth-text-color;
   }
 }

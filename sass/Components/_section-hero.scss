@@ -1,4 +1,6 @@
 .hero {
+  position: relative;
+
   max-width: 1280px;
 
   background-image: linear-gradient($overlay-color, $overlay-color), url('./../images/Hero/Slider\ img\ 3-2.jpg');
