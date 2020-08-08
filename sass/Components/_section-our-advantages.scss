@@ -1,0 +1,111 @@
+.our-advantages {
+  padding-bottom: 119px;
+}
+.section-info {
+  margin-bottom: 44px;
+  max-width: 500px;
+
+  .section-description {
+    @extend %section-description;
+    color: $forth-text-color;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 1px;
+      background-color: $forth-text-color;
+      margin-right: 20px;
+    }
+  }
+  .section-title {
+    @extend %section-title;
+    color: $forth-text-color;
+    margin-bottom: 20px;
+  }
+  .description-text {
+    @extend %description-text;
+    color: $main-text-color;
+  }
+}
+.statistics {
+  @media screen and(min-width:768px) and (max-width: 1279px) {
+    margin-left: auto;
+  }
+}
+.statistics-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and(min-width: 768px) {
+    width: 450px;
+    margin-left: auto;
+  }
+
+  .statistics-item {
+    @extend %section-description;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: $forth-text-color;
+    width: 193px;
+    height: 133px;
+    text-align: center;
+    text-transform: none;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $additional-bg-color;
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      margin-bottom: 30px;
+    }
+    &:nth-of-type(1),
+    &:nth-of-type(3) {
+      margin-right: 30px;
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 210px;
+      padding: 20px 40px;
+      &:not(:last-child) {
+        padding-right: 20px 44px;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      width: 170px;
+      padding: 20px 20px;
+      &:not(:last-child) {
+        padding-right: 20px 24px;
+      }
+    }
+
+    .number {
+      display: block;
+      font-size: 42px;
+      line-height: 1.36;
+      letter-spacing: 0.05em;
+      font-weight: bold;
+      margin-bottom: 6px;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 13px;
+        height: 22px;
+        margin-left: 2px;
+        background-color: $accent-color;
+      }
+    }
+  }
+}
+.statistics-item:nth-child(2n + 2) {
+  transform: translateY(35px);
+}
