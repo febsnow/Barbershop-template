@@ -27,3 +27,32 @@
     background-image: linear-gradient($overlay-color, $overlay-color), url('./../images/Hero/Slider-img-3.jpg');
   }
 }
+.hero-info {
+  margin: 184px auto 206px 100px;
+
+  .section-description {
+    @extend %section-description;
+    color: $hero-section-description-color;
+
+    &:before {
+      content: '';
+      display: block;
+      background-color: $hero-section-description-color;
+      width: 60px;
+      height: 1px;
+      margin-right: 40px;
+
+      position: absolute;
+    }
+  }
+  .section-title {
+    @extend .section-title;
+    color: $third-text-color;
+    font-size: 72px;
+    line-height: 1.18;
+  }
+  .description-text {
+    @extend %description-text;
+    color: $hero-description-text-color;
+  }
+}
